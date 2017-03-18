@@ -1,0 +1,261 @@
+html, body{
+    height: 100%;
+}
+table {
+	border-collapse: collapse;
+}
+table.rightLargeTable {
+	color: #b3b3b3;
+	float: right;
+	//height: 550px;
+    //width: 1000px;
+	border-collapse: collapse;
+	height: 101%;
+    width: 80%;
+    margin-right: 11px;
+}
+
+.rightTable td {
+	padding-top: 8px;
+    padding-left: 5px;
+	vertical-align: top;
+    border: solid #e5e6e7;
+    border-width: 1px;
+    width: 90px;
+    height: 80px;
+}
+
+.rightTable td:first-child {
+	border-left: none;
+}
+
+.rightTable td:last-child {
+	border-right: none;
+}
+
+th {
+	text-align: left;
+}
+
+.fa-chevron-up {
+	color: #2ed39e;
+    font-size: 12px;
+}
+
+.monthHeader {
+	width: 81%;
+	float: right;
+	text-align: center;
+	margin-top: 5px;
+    height: 32px;
+    border-bottom: solid #e5e6e7;
+    border-bottom-width: 1px;
+}
+
+.fa-chevron-down {
+	color: #2ed39e;
+    font-size: 12px;
+}
+
+.monthName {	
+	margin-left: 12px;
+	color: #2ed39e;
+}
+
+.fa-refresh {
+	margin-left: 35px;
+	//float: right;
+	color: #2ed39e;
+    //font-size: 12px;	
+}
+
+.fa-cog {
+	margin-right: 6px;
+	//float: right;
+	color: #2ed39e;
+    //font-size: 12px;	
+    margin-left: 10px;
+}
+
+.rightTopCorner {
+	float: right;
+}
+
+
+
+.rightTable {
+	display: inline;
+	width: 88%;
+    height: 100%;
+}
+
+.monthNameRow {
+	vertical-align: bottom;
+    height: 35px;
+    font-size: 13px;
+}
+
+th {
+	font-weight: normal;
+}
+
+.menuIcon {    
+	width: 22px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 15px;
+}
+
+.leftBar {
+	border-radius: 2px;
+	color: white;
+	padding-top: 9px;
+	position: fixed;	
+	height: 100%;
+	width: 18%;
+	display: inline-block;
+	background-color: #2ed39e;
+}
+
+.smallLeftTable {
+	display: inline-block;
+    margin: 22px 52px;
+    font-size: 14px;
+}
+
+.smallTableMonth {
+	background-color: #2bc493
+}
+
+.currentTime {
+	margin-bottom: 10px;
+	font-weight: lighter;
+    	font-size: 50px;
+    	display: inline-block;
+    	margin-left: 44px;
+    /* 	font-family: "Times New Roman", Times, serif; */
+    	font-family: Arial, Helvetica, sans-serif;
+}
+
+.noon {
+	display: inline;
+    	font-size: 16px;
+}
+
+.todayDate {
+	background-color: white;
+    	color: #2bc493;
+}
+
+.todayEvent {
+	background-color: #2bc493;
+	text-align: right;
+	position: relative;
+	font-size: 11px;
+    	padding: 7px 17px 7px 17px;
+    	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.todayEvent:after{
+    content: "";
+    display: block;
+    width: 75%;
+    height: 0.70px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 50%;
+    opacity: 0.25;
+}
+
+.fa-cloud {
+    margin-left: 40px;
+    font-size: 39px;
+    color: white;;
+}
+
+.week_day_name {
+	color: #777777;
+    border-bottom: solid #2ed39e;
+    background-color: #f8f8f8;
+}
+
+.today_date {
+	color: white;
+    background-color: #2ed39e;
+}
+
+.eventBox {
+	//border: solid;
+	width: 98%;
+    height: 18%;
+}
+
+div.eventBox:hover {
+	cursor: url("/static/images/c_app/fa-mouse.png"),auto;
+	background-color: #ff8787;
+}
+
+.dummyBox {
+	text-align: center;
+	//border: solid;
+	width: 98%;
+    height: 18%;
+}
+
+div.dummyBox:hover {
+	cursor: url("/static/images/c_app/fa-mouse.png"),auto;
+	background-color: #ff8787;
+}
+
+
+
+.eventThere {
+	border: solid #2ed39e;
+    width: 93%;
+    height: 18%;
+    border-radius: 3px 0px 0px 3px;
+    border-right-color: #38a1e4;
+}
+
+.dummyThere {
+	text-align: center;
+	border: solid #2ed39e;
+    width: 93%;
+    height: 18%;
+    border-radius: 3px 0px 0px 3px;
+    border-right-color: #38a1e4;
+}
+
+
+.today_eventBox {
+	margin-bottom: 2px;
+	clear: both;
+	width: 95%;
+    background-color: white;
+    height: 18%;
+    border-radius: 3px 0px 0px 3px;
+    color: #2ed39e;
+    /* border-right-color: #ff8787; */
+    border-right: solid #ce4242;
+}
+
+.today_eventBox:hover {
+	cursor: url("/static/images/c_app/fa-mouse.png"),auto;
+	background-color: #ff8787;
+	color: white;	
+}
+
+.eventNameToday {
+	padding-top: 2px;
+	float: left;
+    font-size: 11px;
+    padding-left: 3px;
+}
+
+.eventTimeToday {
+	padding-top: 2px;
+	font-size: 11px;
+    float: right;
+    padding-right: 4px;
+    color: #ce4242;
+}

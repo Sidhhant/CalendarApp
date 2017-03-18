@@ -1,0 +1,79 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/css/c_app/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/c_app/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/c_app/styles.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  	var weekDayMonth={{ weekDayMonth }};
+  	var month={{ month }};
+    var year={{ year }};
+    var day={{ day }};
+    var monthName="{{ monthName }}";
+    var weekDay={{ weekDay }};
+    var weekDayName="{{ weekDayName }}";
+    var prMonth={{ prMonth }};
+    var nMonth={{ nMonth }};
+    var prYear={{ prYear }};
+    var nYear={{ nYear }};
+    var monthRange={{ monthRange }};
+    var prmonthRange={{ prmonthRange }};
+    var nmonthRange={{ nmonthRange }};
+	//console.log(weekDayMonth);
+  </script>
+
+  <link rel="stylesheet" href="/static/css/c_app/styles.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/c_app/create_event.css">
+</head>
+
+
+
+
+<div class="createEventBox">
+<form class="arrow_box" >
+	{% csrf_token %}
+	<div style="clear: both;">
+	<span class="dateEvent">Wednesday, 15 June 2017</span>
+	<i class="fa fa-times" aria-hidden="true" onclick="hide_Event()"></i>
+	</div>
+	<input type="text" name="name" placeholder="Event Name" class="eventNameInput">
+	<input type="text" name="location" placeholder="Location" class="locationInput">
+	<div class="eventStart">
+	<span style="padding-left: 8px;">Starts</span><br>
+	<input type="date" name="start_date" value="{{ c_date }}">
+	<input type="time" name="start_time" value="14:00">
+	<span style="padding-left: 8px;display: inline-block;margin-top: 5px;">Ends</span><br>
+	<input type="date" name="end_date" value="{{ c_date }}">
+	<input type="time" name="end_time" value="14:00">
+	</div>
+	<span style="padding-left: 8px;display: inline-block;margin-top: 20px;" class="eventStart">Description</span>
+	<input type="text" name="description" maxlength="500" class="descriptionInput">
+	<div style="clear: both;">
+	<input type="button" name="cancel" class="cancelBtn" value="Cancel" onclick="hide_Event()">
+	<input type="button" name="submit" value="Submit" class="submitBtn" onclick="createEv()">
+	</div>
+</form>
+</div>
+
+
+<div class="showEventBox">
+<form  class="arrow_box">
+	<div style="clear: both;">
+	<span class="dateEvent EventN">Event 1</span>
+	<i class="fa fa-times" aria-hidden="true" onclick="hide_viewEvent()"></i>
+	</div>
+	<span class="showEventHeader">Where</span>
+	<div class="showEventText shLocation">Ajmer</div>
+	<span class="showEventHeader">When</span>
+	<div class="showEventText shTime">3 pm Wed, 2017</div>
+	
+	<span class="showEventHeader">Description</span>
+	<div class="showEventText shDesc">Good City Life Exists</div>
+	<div style="clear: both;">
+	<input class="eventId" style="display: none;">
+	<input type="button" name="delete" class="cancelBtn" value="Delete" onclick="deleteEvent()">
+	<input type="button" name="edit" value="Edit" class="submitBtn" onclick="editEvent()">
+	</div>
+</form>
+</div>

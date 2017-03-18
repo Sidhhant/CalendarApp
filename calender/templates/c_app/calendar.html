@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/css/c_app/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/c_app/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/c_app/styles.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/c_app/create_event.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  	var weekDayMonth={{ weekDayMonth }};
+  	var month={{ month }};
+    var year={{ year }};
+    var day={{ day }};
+    var monthName="{{ monthName }}";
+    var weekDay={{ weekDay }};
+    var weekDayName="{{ weekDayName }}";
+    var prMonth={{ prMonth }};
+    var nMonth={{ nMonth }};
+    var prYear={{ prYear }};
+    var nYear={{ nYear }};
+    var monthRange={{ monthRange }};
+    var prmonthRange={{ prmonthRange }};
+    var nmonthRange={{ nmonthRange }};
+    //var events = "{{ events }}";
+	//console.log(events[0]);
+  </script>
+  
+
+
+
+
+</head>
+<body>
+<div class="leftBar">
+	<div class="menuIcon"></div>
+	<div class="menuIcon"></div>
+	<div class="menuIcon"></div>
+	<div class="smallLeftTable">
+		<div class="">
+			<span class="">{{ monthName }} {{ year }}</span>
+		</div>
+			<table style="text-align: center;">
+				<tr class="smallTable">
+					<th>Su</th>
+					<th>Mo</th>
+					<th>Tu</th>
+					<th>We</th>
+					<th>Th</th>
+					<th>Fr</th>
+					<th>Sa</th>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td>30</td>
+					<td>31</td>
+					<td class="smallTableMonth">1</td>
+					<td class="smallTableMonth">2</td>
+					<td class="smallTableMonth">3</td>
+					<td class="smallTableMonth">4</td>
+				</tr>
+				<tr>
+					<td class="smallTableMonth">5</td>
+					<td class="smallTableMonth">6</td>
+					<td class="smallTableMonth">7</td>
+					<td class="smallTableMonth">8</td>
+					<td class="smallTableMonth">9</td>
+					<td class="smallTableMonth">10</td>
+					<td class="smallTableMonth">11</td>
+				</tr>
+				<tr>
+					<td class="smallTableMonth">12</td>
+					<td class="smallTableMonth">13</td>
+					<td class="smallTableMonth">14</td>
+					<td class="todayDate">15</td>
+					<td class="smallTableMonth">16</td>
+					<td class="smallTableMonth">17</td>
+					<td class="smallTableMonth">18</td>
+				</tr>
+				<tr>
+					<td class="smallTableMonth">19</td>
+					<td class="smallTableMonth">20</td>
+					<td class="smallTableMonth">21</td>
+					<td class="smallTableMonth">22</td>
+					<td class="smallTableMonth">23</td>
+					<td class="smallTableMonth">24</td>
+					<td class="smallTableMonth">25</td>
+				</tr>
+				<tr>
+					<td class="smallTableMonth">26</td>
+					<td class="smallTableMonth">27</td>
+					<td class="smallTableMonth">28</td>
+					<td class="smallTableMonth">29</td>
+					<td class="smallTableMonth">30</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</table>
+		</div>
+		<div class="currentTime">
+			5:00<p class="noon">pm</p>
+		</div>
+		<div style="padding-left: 43px;font-size: 14px;margin-bottom: 5px;">
+			Today
+		</div>
+		<div class="todayEvent"><span>2p</span></div>
+		<div class="todayEvent"><span>3p</span></div>
+		<div class="todayEvent"><span>4p</span></div>
+		<div class="todayEvent"><span>5p</span></div>
+		<div class="todayEvent"><span>6p</span></div>
+		
+		<div style="padding-left: 43px;font-size: 14px;margin-bottom: 5px;margin-top: 85px">
+			Weather
+		</div>
+		<div style="background-color: #2bc493;padding-top: 6px; padding-bottom: 6px;">
+			<i class="fa fa-cloud" aria-hidden="true"></i>
+			<span style="font-size: 35px;">&nbsp; 28<sup style="font-size: 20px;font-weight: 600;">o</sup></span>
+			<span style="font-size: 19px;color: #f8f8f8; ">20<sup style="font-weight: 600;">o</sup> C</span>
+			<div style="font-family: Arial, Helvetica, sans-serif;font-size: 13px;padding-left: 39px;">Cloudy</div>
+		</div>
+</div>
+<div class="rightTable">
+	<div class="monthHeader">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		<i class="fa fa-chevron-down" aria-hidden="true"></i>
+		<span class="monthName">{{ monthName }} {{ year }}</span>
+		<div class="rightTopCorner">
+		<a href=""><i class="fa fa-refresh" aria-hidden="true"></i></a>
+		<i class="fa fa-cog" aria-hidden="true"></i>
+		</div>
+	</div>
+		<table class="rightLargeTable">
+			<tr class="monthNameRow">
+				<th>Sunday</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th class="week_day_name">Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+			</tr>
+			<tr>
+				<td style="background-color: #f8f8f8;">5/29</td>
+				<td style="background-color: #f8f8f8;">30</td>
+				<td style="background-color: #f8f8f8;">31</td>
+				<td>6/1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>6</td>
+				<td>
+				<span>7</span>
+				<div class="eventBox"></div>
+				</td>
+				<td>8</td>
+				<td>9</td>
+				<td>
+				10
+				<div class="eventThere"></div>
+				</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td class="today_date">
+				15
+				<div class="today_eventBox">
+					<span class="eventNameToday">Event 1</span>
+					<span class="eventTimeToday">2p</span>
+				</div>
+				</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td style="background-color: #f8f8f8;">7/1</td>
+				<td style="background-color: #f8f8f8;">2</td>
+			</tr>
+		</table>
+</div>
+<script src="/static/js/c_app/main.js"></script>
+<script type="text/javascript" src="/static/js/c_app/ajaxFunction.js"></script>
+
+{% for event in events %}
+<script type="text/javascript">
+	$(".today_date").append(eventBox);
+	$(".today_eventBox:last-child").attr('id', 'event{{ event.id }}');
+	$(".today_eventBox:last-child > .eventNameToday").html("{{ event.name }}");
+	$(".today_eventBox:last-child > .eventTimeToday").html("{{ event.start_time }}");
+	$("#event{{ event.id }}").on('click',function(){ viewEvent("{{ event.id }}") });
+</script>
+{% endfor %}
+</body>
+{% include "c_app/createEvent.html" %}
+</html>
