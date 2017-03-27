@@ -7,7 +7,8 @@ Just install git in your system and clone the repository with following command-
 $ git clone https://github.com/Sidhhant/CalendarApp.git 
 ```
 <br/>
-Now in the folder with ```manage.py``` file run command- <br/>
+Now in the folder with manage.py file run command- 
+<br/>
 
 ```  
 $ python manage.py runserver 
